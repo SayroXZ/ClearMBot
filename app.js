@@ -16,6 +16,11 @@ const token = 'Mzk3MzU2NTY3NTI5MjU5MDEw.DSuypw.KAl_rsxLVgGc5Za4fanS98WnO5g';
 
 bot.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
+
+bot.on("ready", () => {
+    bot.user.setGame("c-purge");
+});
+
   bot.on('message', message => {
     if (message.content =='c-purge') {
 
